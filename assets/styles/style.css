@@ -1,0 +1,578 @@
+:root{
+    --headercolor: #181350;
+    --btnFirstColor: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%);
+    --cardLinkColor: #9224D6;
+    --CIRCLE1: #FFD646;
+    --circle2: #8FDEFF;
+    --circle3: #FF8E8E;
+    --keepGradient: linear-gradient(to right, #124B8C,#272B70,#401388);
+    --footerTextColor: #1C1B1E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+}
+
+header{
+    background-color: var(--headercolor);
+    position: relative;
+}
+
+.ellips1{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    left: -400px;
+    top: 0;
+    background: #0EA3E3;
+    filter: blur(500px);
+    border-radius: 50%;
+}
+
+.ellips2{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -250px;
+    right: 0;
+    border-radius: 50%;
+    background: #6C22C9;
+    filter: blur(300px);
+}
+
+.ellips3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 30%;
+    top: 60%;
+    border-radius: 50%;
+    background: #8FDEFF;
+    filter: blur(200px);
+}
+
+.navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: var(--headercolor);
+    z-index: 10;
+}
+.nav-container{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar-nav .nav-link{
+    color: white !important;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+}
+
+.navbar-nav .nav-item{
+    margin-left:45px 
+}
+
+.btn-nav{
+    width: 120px;
+    height: 35px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+/* ==============================================
+                    Main styles
+   ============================================== */
+
+main{
+    padding-top: 180px;
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+
+.main-left{
+    width: 50%;
+    color: white;
+    position: relative;
+    z-index: 1;
+
+}
+
+.main-left .main-left__title span{
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    margin-right: 35px;
+}
+
+.main-left .main__title{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    margin: 16px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.main-left .main-text{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+}
+
+.main-left .btn{
+    border-radius: 30px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    margin-top: 15px;
+}
+
+.main-left .btn-first{
+    background: var(--btnFirstColor);
+}
+
+.main-left .btn-second{
+    border: 1px solid white;
+}
+
+.main-find{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.13em;
+    margin-top: 60px;
+}
+
+.main-media{
+    font-size: 13px;
+}
+
+.main-media i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.main-media span,
+.main-media img{
+    margin-left: 20px;
+}
+
+.main-right{
+    width: 50%;
+}
+
+.main-right--first,
+.main-right--second{
+    position: relative;
+    width: 50%;
+}
+
+main .main-right--first img:first-child{
+    position: absolute;
+    width: 120%;
+    top: 0;
+    left: -30px;
+}
+
+.main-right--first .microphone{
+    position: absolute;
+    bottom: -35px;
+    right: -27px
+}
+
+.main-right--second .secondman{
+    position: absolute;
+    width: 120%;
+    bottom: 30px;
+    left: -30px;
+}
+
+.main-vector{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(220.4deg, #AB69FF -24.24%, #BE9AED 129%);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 30px 30px 0px;
+}
+
+
+/* ============================================
+                  Card styles
+=============================================== */
+
+.card-wrapper .card-container{
+    width: 83%;
+    margin-top: 100px;
+}
+
+.card-nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-nav .card__title{
+    font-size: 33px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+}
+
+.card-nav .cards-link{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: var(--cardLinkColor);
+    text-decoration: none;
+}
+
+.card-nav .cards-link:hover{
+    text-decoration: underline;
+}
+
+.card-image{
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    border-radius: 10px;
+}
+
+.card-image:hover img{
+    transform: scale(1.1);
+}
+
+.card-image div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    height: 52px;
+    background: #1C1B1E;
+    color: white;
+    border-radius: 10px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container .row{
+    justify-content: space-between;
+}
+
+.card-container .row .card{
+    border: none;
+    margin-top: 50px;
+}
+
+.card-body .card-header__title{
+    margin-top: 24px;  
+}
+
+.card-body .card-header__title span{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    margin-right: 24px;
+}
+
+.card-body .card-title{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin-top: 15px;
+}
+
+.card-body .card-text{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.card .card-body{
+    padding: 0;
+}
+
+.card .card-footer{
+    background-color: white;
+    border-top: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.card-footer a{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--cardLinkColor);
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.fa-play{
+    margin-right: 12px;
+}
+
+.card-footer p{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    opacity: 0.6;
+}
+
+/* ============================================
+                  Meet styles
+=============================================== */
+.meet-container{
+    width: 83%;
+    margin-top: 150px;
+}
+
+.meet-container .col-lg-6 img{
+    width: 80%;
+}
+
+.meet-container .row{
+    align-items: center;
+}
+
+.meet-container .meet-title{
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
+}
+
+.meet-container .meet-text{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.meet-container button{
+    border-radius: 40px;
+    padding: 7px 25px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.meet-container .row .col-lg-6:first-child{
+    position: relative;
+}
+
+.meet-container .col-lg-6 .circle1{
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    height: 128px;
+    width: 128px;
+    background-color: var(--CIRCLE1);
+}
+
+.meet-container .col-lg-6 .circle2{
+    position: absolute;
+    border-radius: 50%;
+    top: -35px;
+    right: 80px;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    background-color: var(--circle2);
+}
+
+.meet-container .col-lg-6 .circle3{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: 50px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--circle3);
+}
+
+
+/* ======================================
+                 Keep Styles        
+========================================= */
+.keep{
+    width: 100%;
+    margin: 90px 0;
+}
+
+.keep-container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+    background: var(--keepGradient);
+    border-radius: 10px;
+}
+
+.keep-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.keep-text{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.keep-form{
+    position: relative;
+    width: 43%;
+    margin: 40px auto;
+}
+
+.keep-form input{
+    width: 100%;
+    height: 41px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    text-indent: 22px;
+    outline: none;
+}
+
+.keep-form .btn-keep{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    width: 148px;
+    height: 43px;
+    background: var(--btnFirstColor);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+
+/* ========================================
+                Footer Styles           
+=========================================== */
+.footer-container{
+    width: 83%;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo span{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: var(--footerTextColor);
+    margin-left: -130px;
+}
+
+.footer-text{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--footerTextColor);
+    opacity: 0.6;
+    margin-top: 12px;
+    width: 60%;
+}
+
+.footer-social{
+    margin-top: 75px;
+}
+
+.footer-social span{
+    font-size: 13px;
+    margin-right: 45px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
+.footer-title{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.footer-container .footer-list{
+    padding-left: 0;
+}
+
+.footer-container .footer-list .footer-link{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.footer-container .footer-list .footer-item{
+    list-style: none;
+}
+
+.footer-container .footer-bottom{
+    padding: 15px 0;
+}
+
+.footer-container .footer-bottom p{
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+}
