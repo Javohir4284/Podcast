@@ -41,6 +41,19 @@
         font-size: 36px !important;
         line-height: 48px;
     }
+
+    .card-container{
+        margin-top: 50px;
+    }
+
+    main{
+        padding: 100px 0;
+    }
+
+    .card-nav .card__title{
+        font-size: 24px;
+    }
+
     .keep-container{
         padding: 50px 20px;
     }
@@ -70,6 +83,10 @@
 }
 
 @media only screen and (max-width: 576px){
+    .nav-container .navbar-nav .nav-item{
+        margin: 0 auto;
+    }
+
     .nav-container{
         padding-top: 0;
     }
@@ -77,7 +94,14 @@
         width: 50%;
     }
 
+    main .main-btn .btn{
+        width: 100%;
+    }
+
+
+
     .main-left .main-left__title span{
+        display: block;
         font-size: 14px;
         margin-right: 10px;
     }
@@ -88,7 +112,8 @@
     }
 
     .main-left .btn{
-        width: 45%;
+        display: block !important;
+        width: 100%;
     }
 
     .meet-container .col-lg-6 .circle1{
@@ -115,6 +140,53 @@
 
     .footer-bottom{
         display: block !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .navbar-light .navbar-toggler-icon{
+        width: 25px;
+    }
+    .main-left .main__title{
+        font-size: 24px !important;
+    }
+    
+    .card-nav{
+        display: block !important;
+    }
+
+    .main-media span, .main-media img{
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main-left .main-text{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .card-body .card-header__title span{
+        font-size: 11px;
+        margin-right: 5px;
+    }
+    
+    .meet-container .meet-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .meet-container .meet-text{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .meet-container button{
+        width: 100%;
+    }
+
+    .topic .card-nav{
+        display: flex !important;
     }
 }
 
